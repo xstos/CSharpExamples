@@ -60,6 +60,11 @@ namespace CSharpExamples
             ret.OnNext();
             return ret;
         }
+        public static ObservableExpression<T> operator -(ObservableExpression<T> oe1, ObservableExpression<T> oe2)
+        {
+            //todo: add more operators and methods...
+            throw new NotImplementedException();
+        }
 
         private void OnNext()
         {
@@ -67,23 +72,18 @@ namespace CSharpExamples
         }
     }
 
-    public static class Example
+    public static partial class Examples
     {
-        public static void Main()
+        public static void Example1()
         {
             ObservableExpression<int> subExpr = 0;
 
             var myExpr = subExpr + 1000 + subExpr;
 
-            myExpr.Distinct().Subscribe((i) =>
-            {
-                Console.WriteLine(i);
-            });
+            myExpr.Distinct().Subscribe(Console.WriteLine);
 
             subExpr.Set(1);   //prints 1002
             subExpr.Set(123); //prints 1246
-            
-            Console.ReadLine();
         }
     }
 }
