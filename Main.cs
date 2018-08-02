@@ -12,6 +12,7 @@ namespace CSharpExamples
         {
             Examples.Example1();
             Examples.Example2();
+            Examples.Example3();
             Console.ReadLine();
         }
     }

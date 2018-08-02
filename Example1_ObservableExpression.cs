@@ -76,6 +76,7 @@ namespace CSharpExamples
     {
         public static void Example1()
         {
+            Console.WriteLine("Example1");
             ObservableExpression<int> subExpr = 0;
 
             var myExpr = subExpr + 1000 + subExpr;

@@ -19,6 +19,7 @@ namespace CSharpExamples
     {
         public static void Example2()
         {
+            Console.WriteLine("Example2");
             var jimmy = Person.New(name: "Jimmy", age: 5);
 
             //do something with jimmy
