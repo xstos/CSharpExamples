@@ -35,10 +35,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Example2_ImmutableNamedTuples.cs" />
-    <Compile Include="Example3_PostSharp.cs" />
+    <Compile Include="Example2_ImmutableNamedTuples\Example2_ImmutableNamedTuples.cs" />
+    <Compile Include="Example3_PostSharp\Example3_PostSharp.cs" />
     <Compile Include="Main.cs" />
-    <Compile Include="Example1_ObservableExpression.cs" />
+    <Compile Include="Example1_ObservableExpression\Example1_ObservableExpression.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
